@@ -1,13 +1,13 @@
-const mongoose = require('mongoose');
+const { Schema, model } = require('mongoose');
 
-const TransactionSchema = new mongoose.Schema({
+const schema = new Schema({
     text: {
         type: String,
         trim: true,
         required: [true, 'Please add some text']
     },
     amount: {
-        type: Number,
+        type: Number, min: 0,
         required: [true, 'Please add a positive or negative number']
     },
     createdAt: {
@@ -16,4 +16,4 @@ const TransactionSchema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('Transaction', TransactionSchema)
+module.exports = model('Transaction', schema)
