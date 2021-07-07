@@ -1,3 +1,7 @@
-# expense-tracker
+## Expense-tracker
 
-This is a simple expense tracker. For the client I used create-react-app, axios and react-dom. And for the server technologies I used are Node.js, Express, Mongoose and MongoDB for DB
+### A simple application where you can manage your expenses.
+
+ - Front-End - React, Axios, React-dom
+ - Back-End - Node.js, Express, Mongoose
+
